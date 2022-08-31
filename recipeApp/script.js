@@ -191,7 +191,9 @@ function addMealToFav(mealJson)
         }
     });
 
-    newli.addEventListener("click", ()=>{
+    const photo = newli.querySelector("img");
+
+    photo.addEventListener("click", ()=>{
         showMealInfo(mealJson);
     });
 
